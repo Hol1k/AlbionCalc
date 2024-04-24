@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProfitCalculators
 {
-    internal class RefiningCalculator
+    static internal class RefiningCalculator
     {
 
     }

@@ -10,9 +10,19 @@ namespace ProfitCalculators.Items
     internal class DefaultItem
     {
         public string name { get; private set; }
-        public byte tier { get; private set; }
-        public float weight { get; private set; }
-        public int count { get; private set; }
+        protected byte _tier;
+        public byte tier
+        {
+            get { return _tier; }
+            protected set { _tier = Math.Max((byte)8, Math.Min((byte)1, value)); }
+        }
+        public float weight { get; protected set; }
+        protected int _count;
+        public int count
+        {
+            get { return _count; }
+            protected set { _count = Math.Min(0, value); }
+        }
 
         public DefaultItem(string name = "", byte tier = 1, float weight = 0f, int count = 0)
         {
@@ -22,41 +32,11 @@ namespace ProfitCalculators.Items
             this.count = count;
         }
 
-        public static DefaultItem operator +(DefaultItem item, int count)
-        {
-            int newCount = item.count + count;
-            item.count = newCount < 1000 ? newCount : 999;
-            return item;
-        }
-        public static DefaultItem operator +(DefaultItem item1, DefaultItem item2)
-        {
-            int newCount = item1.count + item2.count;
-            item1.count = newCount < 1000 ? newCount : 999;
-            return item1;
-        }
-        public static DefaultItem operator ++(DefaultItem item)
-        {
-            int newCount = item.count + 1;
-            item.count = newCount < 1000 ? newCount : 999;
-            return item;
-        }
-        public static DefaultItem operator -(DefaultItem item, int count)
-        {
-            int newCount = item.count - count;
-            item.count = newCount >= 0 ? newCount : 0;
-            return item;
-        }
-        public static DefaultItem operator -(DefaultItem item1, DefaultItem item2)
-        {
-            int newCount = item1.count - item2.count;
-            item1.count = newCount >= 0 ? newCount : 0;
-            return item1;
-        }
-        public static DefaultItem operator --(DefaultItem item)
-        {
-            int newCount = item.count - 1;
-            item.count = newCount >= 0 ? newCount : 0;
-            return item;
-        }
+        public static DefaultItem operator +(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count + count);
+        public static DefaultItem operator +(DefaultItem item1, DefaultItem item2) => new(item1.name, item1.tier, item1.weight, item1.count + item2.count);
+        public static DefaultItem operator ++(DefaultItem item) => new(item.name, item.tier, item.weight, item.count++);
+        public static DefaultItem operator -(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count - count);
+        public static DefaultItem operator -(DefaultItem item1, DefaultItem item2) => new(item1.name, item1.tier, item1.weight, item1.count - item2.count);
+        public static DefaultItem operator --(DefaultItem item) => new(item.name, item.tier, item.weight, item.count--);
     }
 }

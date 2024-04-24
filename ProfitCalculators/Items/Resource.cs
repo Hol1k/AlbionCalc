@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProfitCalculators
+namespace ProfitCalculators.Items
 {
-    static internal class RefiningCalculator
+    internal class Resource : DefaultItem
     {
-        
+
     }
 }

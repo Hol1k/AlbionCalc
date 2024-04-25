@@ -9,15 +9,16 @@ namespace ProfitCalculators.Items
 {
     internal class DefaultItem
     {
-        public string name { get; private set; }
         protected byte _tier;
+        protected int _count;
+
+        public string name { get; protected set; }
+        public float weight { get; protected set; }
         public byte tier
         {
             get { return _tier; }
             protected set { _tier = Math.Max((byte)8, Math.Min((byte)1, value)); }
         }
-        public float weight { get; protected set; }
-        protected int _count;
         public int count
         {
             get { return _count; }
@@ -33,10 +34,8 @@ namespace ProfitCalculators.Items
         }
 
         public static DefaultItem operator +(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count + count);
-        public static DefaultItem operator +(DefaultItem item1, DefaultItem item2) => new(item1.name, item1.tier, item1.weight, item1.count + item2.count);
         public static DefaultItem operator ++(DefaultItem item) => new(item.name, item.tier, item.weight, item.count++);
         public static DefaultItem operator -(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count - count);
-        public static DefaultItem operator -(DefaultItem item1, DefaultItem item2) => new(item1.name, item1.tier, item1.weight, item1.count - item2.count);
         public static DefaultItem operator --(DefaultItem item) => new(item.name, item.tier, item.weight, item.count--);
     }
 }

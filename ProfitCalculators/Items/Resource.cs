@@ -8,7 +8,7 @@ namespace ProfitCalculators.Items
 {
     internal class Resource : DefaultItem
     {
-        public ResourceTypeEnum resourceType {  get; private set; }
+        public ResourceTypeEnum resourceType { get; private set; }
         private byte _enchantment;
         public byte enchantment
         {
@@ -23,10 +23,8 @@ namespace ProfitCalculators.Items
         }
 
         public static Resource operator +(Resource item, int count) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count + count);
-        public static Resource operator +(Resource item1, DefaultItem item2) => new(item1.resourceType, item1.enchantment, item1.name, item1.tier, item1.weight, item1.count + item2.count);
         public static Resource operator ++(Resource item) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count++);
         public static Resource operator -(Resource item, int count) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count - count);
-        public static Resource operator -(Resource item1, DefaultItem item2) => new(item1.resourceType, item1.enchantment, item1.name, item1.tier, item1.weight, item1.count - item2.count);
         public static Resource operator --(Resource item) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count--);
     }
 }

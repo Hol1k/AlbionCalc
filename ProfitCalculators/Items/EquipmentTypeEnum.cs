@@ -1,0 +1,34 @@
+﻿namespace ProfitCalculators.Items
+{
+    enum EquipmentTypeEnum
+    {
+        ClothCowl,
+        ClothRobe,
+        ClothSandals,
+        LeatherHood,
+        LeatherJacket,
+        LeatherShoes,
+        PlateHelmet,
+        PlateArmor,
+        PlateBoots,
+        Tome,
+        Shield,
+        Torch,
+        ArcaneStaff,
+        Axe,
+        Bow,
+        Crossbow,
+        CurseStaff,
+        Dagger,
+        FireStaff,
+        FrostStaff,
+        Hammer,
+        HolyStaff,
+        WarGloves,
+        Mace,
+        NatureStaff,
+        Quarterstaff,
+        Spear,
+        Sword
+    }
+}

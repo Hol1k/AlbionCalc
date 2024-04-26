@@ -21,4 +21,12 @@ namespace ProfitCalculators.Items
         public static Resource operator -(Resource item, int count) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count - count);
         public static Resource operator --(Resource item) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count--);
     }
+
+    internal partial class Equipment : DefaultItem
+    {
+        public static Equipment operator +(Equipment item, int count) => new(item.equipmentType, item.enchantment, item.name, item.tier, item.weight, item.count + count);
+        public static Equipment operator ++(Equipment item) => new(item.equipmentType, item.enchantment, item.name, item.tier, item.weight, item.count++);
+        public static Equipment operator -(Equipment item, int count) => new(item.equipmentType, item.enchantment, item.name, item.tier, item.weight, item.count - count);
+        public static Equipment operator --(Equipment item) => new(item.equipmentType, item.enchantment, item.name, item.tier, item.weight, item.count--);
+    }
 }

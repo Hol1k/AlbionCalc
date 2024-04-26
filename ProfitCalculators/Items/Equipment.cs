@@ -8,16 +8,17 @@ namespace ProfitCalculators.Items
 {
     internal partial class Equipment : DefaultItem
     {
-        private byte _enchantment;
+        private short _enchantment;
 
         public EquipmentTypeEnum equipmentType { get; private set; }
-        public byte enchantment
+        public short enchantment
         {
             get { return _enchantment; }
-            private set { _enchantment = Math.Max((byte)4, value); }
+            private set { _enchantment = Math.Max((short)4, value); }
         }
 
-        public Equipment(EquipmentTypeEnum equipmentType, byte enchantment = 0, string name = "", byte tier = 1, float weight = 0f, int count = 0) : base(name, tier, weight, count)
+        public Equipment(EquipmentTypeEnum equipmentType, short tier = 1, short enchantment = 0)
+            : base(equipmentType.ToString(), tier, 0)
         {
             this.equipmentType = equipmentType;
             this.enchantment = enchantment;

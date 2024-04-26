@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -9,28 +10,23 @@ namespace ProfitCalculators.Items
 {
     internal partial class DefaultItem
     {
-        protected byte _tier;
-        protected int _count;
+        protected int _tier;
 
+        public CraftInstruction craftInstruction { get; protected set; } = new CraftInstruction();
+        public CraftInstruction craftInstructionAlternative { get; protected set; } = new CraftInstruction();
         public string name { get; protected set; }
         public float weight { get; protected set; }
-        public byte tier
+        public int tier
         {
             get { return _tier; }
-            protected set { _tier = Math.Max((byte)8, Math.Min((byte)1, value)); }
-        }
-        public int count
-        {
-            get { return _count; }
-            protected set { _count = Math.Min(0, value); }
+            protected set { _tier = Math.Max((int)8, Math.Min((int)1, value)); }
         }
 
-        public DefaultItem(string name = "", byte tier = 1, float weight = 0f, int count = 0)
+        public DefaultItem(string name = "", int tier = 1, float weight = 0f)
         {
             this.name = name;
             this.tier = tier;
             this.weight = weight;
-            this.count = count;
         }
     }
 }

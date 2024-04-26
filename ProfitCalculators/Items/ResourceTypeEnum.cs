@@ -3,14 +3,14 @@
     enum ResourceTypeEnum
     {
         Wood,
-        Stone,
-        Hide,
-        Ore,
-        Fiber,
         Plank,
+        Stone,
         Brick,
+        Hide,
         Leather,
+        Ore,
         Metal,
+        Fiber,
         Cloth
     }
 }

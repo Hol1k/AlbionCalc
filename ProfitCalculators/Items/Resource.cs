@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProfitCalculators.Items
 {
-    internal class Resource : DefaultItem
+    internal partial class Resource : DefaultItem
     {
         public ResourceTypeEnum resourceType { get; private set; }
         private byte _enchantment;
@@ -21,10 +21,5 @@ namespace ProfitCalculators.Items
             this.resourceType = resourceType;
             this.enchantment = enchantment;
         }
-
-        public static Resource operator +(Resource item, int count) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count + count);
-        public static Resource operator ++(Resource item) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count++);
-        public static Resource operator -(Resource item, int count) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count - count);
-        public static Resource operator --(Resource item) => new(item.resourceType, item.enchantment, item.name, item.tier, item.weight, item.count--);
     }
 }

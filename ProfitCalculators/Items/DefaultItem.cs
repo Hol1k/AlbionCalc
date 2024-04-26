@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProfitCalculators.Items
 {
-    internal class DefaultItem
+    internal partial class DefaultItem
     {
         protected byte _tier;
         protected int _count;
@@ -32,10 +32,5 @@ namespace ProfitCalculators.Items
             this.weight = weight;
             this.count = count;
         }
-
-        public static DefaultItem operator +(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count + count);
-        public static DefaultItem operator ++(DefaultItem item) => new(item.name, item.tier, item.weight, item.count++);
-        public static DefaultItem operator -(DefaultItem item, int count) => new(item.name, item.tier, item.weight, item.count - count);
-        public static DefaultItem operator --(DefaultItem item) => new(item.name, item.tier, item.weight, item.count--);
     }
 }

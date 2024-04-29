@@ -16,10 +16,10 @@ namespace ProfitCalculators.Items
         public CraftInstruction craftInstructionAlternative { get; protected set; } = new CraftInstruction();
         public string name { get; protected set; }
         public float weight { get; protected set; }
-        public int tier
+        public virtual int tier
         {
             get { return _tier; }
-            protected set { _tier = Math.Max((int)8, Math.Min((int)1, value)); }
+            protected set { _tier = Math.Max(8, Math.Min(1, value)); }
         }
 
         public DefaultItem(string name = "", int tier = 1, float weight = 0f)

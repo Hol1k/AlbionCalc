@@ -8,25 +8,32 @@ namespace ProfitCalculators.Items
 {
     internal partial class Resource : DefaultItem
     {
-        public ResourceTypeEnum resourceType { get; private set; }
+        public string resourceType { get; private set; }
         private int _enchantment;
         public int enchantment
         {
             get { return _enchantment; }
             private set { _enchantment = Math.Max(4, value); }
         }
-        public int tier
+        public override int tier
         {
             get { return _tier; }
             protected set { _tier = Math.Max(8, Math.Min(2, value)); }
         }
 
-        public Resource(ResourceTypeEnum resourceType, int tier = 2, int enchantment = 0)
-            : base(resourceType.ToString(), tier, 0)
+        public Resource(string resourceType, int tier = 2, int enchantment = 0)
+            : base(resourceType.ToString(), tier)
         {
             this.resourceType = resourceType;
             this.enchantment = tier <= 4 ? new int() : enchantment;
+            if (resourceType == "Wood" ||
+                resourceType == "Stone" ||
+                resourceType == "Hide" ||
+                resourceType == "Ore" ||
+                resourceType == "Fiber")
+                return;
             int amountOfMatireals = new();
+            KeyValuePair<DefaultItem, int>[] craft;
             switch (tier)
             {
                 case 2:
@@ -53,26 +60,51 @@ namespace ProfitCalculators.Items
                 default:
                     break;
             }
-            if ((resourceType == ResourceTypeEnum.Plank ||
-                resourceType == ResourceTypeEnum.Metal ||
-                resourceType == ResourceTypeEnum.Brick ||
-                resourceType == ResourceTypeEnum.Leather ||
-                resourceType == ResourceTypeEnum.Cloth) &&
-                tier >= 2)
+            if (tier > 2)
             {
-                craftInstruction.SetCraft(
-                    new KeyValuePair<DefaultItem, int>(new Resource(resourceType - 1, tier, enchantment), amountOfMatireals),
-                    new KeyValuePair<DefaultItem, int>(new Resource(resourceType, tier - 1, enchantment), 1)
-                    );
-                if (tier >= 4)
-                {
-                    craftInstructionAlternative.SetCraft(
-                        new KeyValuePair<DefaultItem, int>(new Resource(resourceType - 1, tier, enchantment), amountOfMatireals - 1),
-                        new KeyValuePair<DefaultItem, int>(new DefaultItem("Heart", 1, 2.560f), 1), //Добавить фракционные предметы
-                        new KeyValuePair<DefaultItem, int>(new Resource(resourceType, tier - 1, enchantment), 1)
-                        );
-                }
+                craft = new KeyValuePair<DefaultItem, int>[2];
+                craft[1] = new KeyValuePair<DefaultItem, int>(new Resource(resourceType, tier - 1, enchantment), 1);
             }
+            else
+            {
+                craft = new KeyValuePair<DefaultItem, int>[1];
+            }
+            switch (resourceType)
+            {
+                case ("Plank"):
+                    craft[0] = new KeyValuePair<DefaultItem, int>(new Resource("Wood", tier, enchantment), amountOfMatireals);
+                    break;
+                case ("Brick"):
+                    craft[0] = new KeyValuePair<DefaultItem, int>(new Resource("Stone", tier, enchantment), amountOfMatireals);
+                    break;
+                case ("Leather"):
+                    craft[0] = new KeyValuePair<DefaultItem, int>(new Resource("Hide", tier, enchantment), amountOfMatireals);
+                    break;
+                case ("Metal"):
+                    craft[0] = new KeyValuePair<DefaultItem, int>(new Resource("Ore", tier, enchantment), amountOfMatireals);
+                    break;
+                case ("Cloth"):
+                    craft[0] = new KeyValuePair<DefaultItem, int>(new Resource("Fiber", tier, enchantment), amountOfMatireals);
+                    break;
+                default:
+                    break;
+            }
+
+            craftInstruction = new CraftInstruction(craft);
+        }
+
+        internal static class ResourceType
+        {
+            public const string WOOD = "Wood";
+            public const string PLANK = "Plank";
+            public const string STONE = "Stone";
+            public const string BRICK = "Brick";
+            public const string HIDE = "Hide";
+            public const string LEATHER = "Leather";
+            public const string ORE = "Ore";
+            public const string METAL = "Metal";
+            public const string FIBER = "Fiber";
+            public const string CLOTH = "Cloth";
         }
     }
 }

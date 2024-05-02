@@ -31,31 +31,49 @@ namespace ProfitCalculators.Items
                 resourceType == "Hide" ||
                 resourceType == "Ore" ||
                 resourceType == "Fiber")
-                return;
+            {
+                switch (tier)
+                {
+                    case 2: weight = 0.23f; return;
+                    case 3: weight = 0.34f; return;
+                    case 4: weight = 0.51f; return;
+                    case 5: weight = 0.76f; return;
+                    case 6: weight = 1.14f; return;
+                    case 7: weight = 1.71f; return;
+                    case 8: weight = 2.56f; return;
+                }
+            }
             int amountOfMatireals = new();
             KeyValuePair<DefaultItem, int>[] craft;
             switch (tier)
             {
                 case 2:
                     amountOfMatireals = 1;
+                    weight = 0.23f;
                     break;
                 case 3:
                     amountOfMatireals = 2;
+                    weight = 0.34f;
                     break;
                 case 4:
                     amountOfMatireals = 2;
+                    weight = 0.51f;
                     break;
                 case 5:
                     amountOfMatireals = 3;
+                    weight = 0.76f;
                     break;
                 case 6:
                     amountOfMatireals = 4;
+                    weight = 1.14f;
                     break;
                 case 7:
                     amountOfMatireals = 5;
+                    weight = 1.71f;
                     break;
                 case 8:
                     amountOfMatireals = 5;
+                    weight = 2.56f;
                     break;
                 default:
                     break;
@@ -91,20 +109,6 @@ namespace ProfitCalculators.Items
             }
 
             craftInstruction = new CraftInstruction(craft);
-        }
-
-        internal static class ResourceType
-        {
-            public const string WOOD = "Wood";
-            public const string PLANK = "Plank";
-            public const string STONE = "Stone";
-            public const string BRICK = "Brick";
-            public const string HIDE = "Hide";
-            public const string LEATHER = "Leather";
-            public const string ORE = "Ore";
-            public const string METAL = "Metal";
-            public const string FIBER = "Fiber";
-            public const string CLOTH = "Cloth";
         }
     }
 }

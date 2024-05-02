@@ -45,22 +45,6 @@ namespace ProfitCalculators.Items
             item = item.FirstChild;
 
             KeyValuePair<DefaultItem, int>[] craft;
-            if (item.ChildNodes.Count == 2)
-            {
-                craft = new KeyValuePair<DefaultItem, int>[2];
-                craft[0] = new KeyValuePair<DefaultItem, int>(new Resource(item.FirstChild.Name, tier, enchantment), Convert.ToInt32(item.FirstChild.Value));
-                craft[1] = new KeyValuePair<DefaultItem, int>(new Resource(item.LastChild.Name, tier, enchantment), Convert.ToInt32(item.LastChild.Value));
-            }
-            else
-            {
-                craft = new KeyValuePair<DefaultItem, int>[3];
-                craft[0] = new KeyValuePair<DefaultItem, int>(new Resource(item.ChildNodes[1].Name, tier, enchantment), Convert.ToInt32(item.ChildNodes[1].Value));
-                craft[1] = new KeyValuePair<DefaultItem, int>(new Resource(item.LastChild.Name, tier, enchantment), Convert.ToInt32(item.LastChild.Value));
-                if (item.FirstChild.Attributes.GetNamedItem("alternative") != null)
-                {
-
-                }
-            }
             int craftLength = item.ChildNodes.Count;
             craft = new KeyValuePair<DefaultItem, int>[craftLength];
             if (item.FirstChild.Name != "Artifact")

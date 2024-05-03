@@ -9,18 +9,10 @@ namespace ProfitCalculators.Items
 {
     abstract class Equipment : DefaultItem
     {
-        private short _enchantment;
-
-        public short enchantment
-        {
-            get { return _enchantment; }
-            private set { _enchantment = Math.Max((short)4, value); }
-        }
-
         public Equipment(string name, short tier = 1, short enchantment = 0)
             : base(name, tier)
         {
-            this.enchantment = enchantment;
+            Enchantment = enchantment;
         }
 
         protected virtual void SetCraft(string itemName)
@@ -39,7 +31,7 @@ namespace ProfitCalculators.Items
 
             foreach (XmlNode i in item.FirstChild.ChildNodes)
             {
-                if (i.Name == $"T{tier}") { weight = float.Parse(s: i.Value); break; }
+                if (i.Name == $"T{Tier}") { Weight = float.Parse(s: i.Value); break; }
             }
 
             item = item.FirstChild;
@@ -51,7 +43,7 @@ namespace ProfitCalculators.Items
             {
                 for (int i = 0; i < craftLength; i++)
                 {
-                    craft[i] = new KeyValuePair<DefaultItem, int>(new Resource(item.ChildNodes[i].Name, tier, enchantment),
+                    craft[i] = new KeyValuePair<DefaultItem, int>(new Resource(item.ChildNodes[i].Name, Tier, Enchantment),
                         Convert.ToInt32(item.ChildNodes[i].InnerText));
                 }
             }
@@ -59,11 +51,11 @@ namespace ProfitCalculators.Items
             {
                 for (int i = 1; i < craftLength; i++)
                 {
-                    craft[i-1] = new KeyValuePair<DefaultItem, int>(new Resource(item.ChildNodes[i].Name, tier, enchantment), Convert.ToInt32(item.ChildNodes[i].InnerText));
+                    craft[i-1] = new KeyValuePair<DefaultItem, int>(new Resource(item.ChildNodes[i].Name, Tier, Enchantment), Convert.ToInt32(item.ChildNodes[i].InnerText));
                 }
-                craft[^1] = new KeyValuePair<DefaultItem, int>(new Artifact(item.FirstChild.Attributes.GetNamedItem("alternative").InnerText, tier), 1);
+                craft[^1] = new KeyValuePair<DefaultItem, int>(new Artifact(item.FirstChild.Attributes.GetNamedItem("alternative").InnerText, Tier), 1);
                 craftInstructionAlternative = new CraftInstruction(craft);
-                craft[^1] = new KeyValuePair<DefaultItem, int>(new Artifact(item.FirstChild.InnerText, tier), 1);
+                craft[^1] = new KeyValuePair<DefaultItem, int>(new Artifact(item.FirstChild.InnerText, Tier), 1);
             }
 
             craftInstruction = new CraftInstruction(craft);

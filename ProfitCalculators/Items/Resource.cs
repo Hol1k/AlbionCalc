@@ -9,23 +9,12 @@ namespace ProfitCalculators.Items
     internal partial class Resource : DefaultItem
     {
         public string resourceType { get; private set; }
-        private int _enchantment;
-        public int enchantment
-        {
-            get { return _enchantment; }
-            private set { _enchantment = Math.Max(4, value); }
-        }
-        public override int tier
-        {
-            get { return _tier; }
-            protected set { _tier = Math.Max(8, Math.Min(2, value)); }
-        }
 
         public Resource(string resourceType, int tier = 2, int enchantment = 0)
             : base(resourceType.ToString(), tier)
         {
             this.resourceType = resourceType;
-            this.enchantment = tier <= 4 ? new int() : enchantment;
+            Enchantment = tier <= 4 ? new int() : enchantment;
             if (resourceType == "Wood" ||
                 resourceType == "Stone" ||
                 resourceType == "Hide" ||
@@ -34,13 +23,13 @@ namespace ProfitCalculators.Items
             {
                 switch (tier)
                 {
-                    case 2: weight = 0.23f; return;
-                    case 3: weight = 0.34f; return;
-                    case 4: weight = 0.51f; return;
-                    case 5: weight = 0.76f; return;
-                    case 6: weight = 1.14f; return;
-                    case 7: weight = 1.71f; return;
-                    case 8: weight = 2.56f; return;
+                    case 2: Weight = 0.23f; return;
+                    case 3: Weight = 0.34f; return;
+                    case 4: Weight = 0.51f; return;
+                    case 5: Weight = 0.76f; return;
+                    case 6: Weight = 1.14f; return;
+                    case 7: Weight = 1.71f; return;
+                    case 8: Weight = 2.56f; return;
                 }
             }
             int amountOfMatireals = new();
@@ -49,31 +38,31 @@ namespace ProfitCalculators.Items
             {
                 case 2:
                     amountOfMatireals = 1;
-                    weight = 0.23f;
+                    Weight = 0.23f;
                     break;
                 case 3:
                     amountOfMatireals = 2;
-                    weight = 0.34f;
+                    Weight = 0.34f;
                     break;
                 case 4:
                     amountOfMatireals = 2;
-                    weight = 0.51f;
+                    Weight = 0.51f;
                     break;
                 case 5:
                     amountOfMatireals = 3;
-                    weight = 0.76f;
+                    Weight = 0.76f;
                     break;
                 case 6:
                     amountOfMatireals = 4;
-                    weight = 1.14f;
+                    Weight = 1.14f;
                     break;
                 case 7:
                     amountOfMatireals = 5;
-                    weight = 1.71f;
+                    Weight = 1.71f;
                     break;
                 case 8:
                     amountOfMatireals = 5;
-                    weight = 2.56f;
+                    Weight = 2.56f;
                     break;
                 default:
                     break;

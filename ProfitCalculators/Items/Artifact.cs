@@ -9,7 +9,7 @@ namespace ProfitCalculators.Items
 {
     internal class Artifact : DefaultItem
     {
-        public override int tier
+        public override int Tier
         {
             get { return _tier; }
             protected set { _tier = Math.Min(8, Math.Max(4, value)); }

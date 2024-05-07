@@ -11,7 +11,7 @@ namespace ProfitCalculators.Items
     {
         private short _enchantment;
 
-        public short enchantment
+        public short Enchantment
         {
             get { return _enchantment; }
             private set { _enchantment = Math.Min((short)4, value); }
@@ -20,7 +20,7 @@ namespace ProfitCalculators.Items
         public Equipment(string name, short tier = 1, short enchantment = 0)
             : base(name, tier)
         {
-            this.enchantment = enchantment;
+            Enchantment = enchantment;
         }
 
         protected virtual void SetCraft(string itemName)
@@ -39,14 +39,14 @@ namespace ProfitCalculators.Items
 
             foreach (XmlNode i in item.LastChild.ChildNodes)
             {
-                if (i.Name == $"T{tier}") { weight = float.Parse(s: i.InnerText); break; }
+                if (i.Name == $"T{Tier}") { Weight = float.Parse(s: i.InnerText); break; }
             }
 
             item = item.FirstChild;
 
             int recipesCount = item.ChildNodes.Count;
             KeyValuePair<DefaultItem, int>[] recipe = new KeyValuePair<DefaultItem, int>[0];
-            craftRecipes = new CraftRecipe[recipesCount];
+            CraftRecipes = new CraftRecipe[recipesCount];
 
             for (int j = 0; j < recipesCount; j++)
             {
@@ -55,10 +55,10 @@ namespace ProfitCalculators.Items
                 recipe = new KeyValuePair<DefaultItem, int>[recipeLength];
                 for (int i = 0; i < recipeLength; i++)
                 {
-                    recipe[i] = new KeyValuePair<DefaultItem, int>(CreateItem(craft.ChildNodes[i], tier, enchantment),
+                    recipe[i] = new KeyValuePair<DefaultItem, int>(CreateItem(craft.ChildNodes[i], Tier, Enchantment),
                         Convert.ToInt32(craft.ChildNodes[i].InnerText));
                 }
-                craftRecipes[j] = new CraftRecipe(recipe);
+                CraftRecipes[j] = new CraftRecipe(recipe);
             }
         }
 

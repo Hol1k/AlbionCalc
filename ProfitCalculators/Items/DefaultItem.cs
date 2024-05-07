@@ -12,10 +12,10 @@ namespace ProfitCalculators.Items
     {
         protected int _tier;
 
-        public CraftRecipe[] craftRecipes { get; protected set; } = new CraftRecipe[0];
-        public string name { get; protected set; }
-        public float weight { get; protected set; }
-        public virtual int tier
+        public CraftRecipe[] CraftRecipes { get; protected set; } = new CraftRecipe[0];
+        public string Name { get; protected set; }
+        public float Weight { get; protected set; }
+        public virtual int Tier
         {
             get { return _tier; }
             protected set { _tier = Math.Min(8, Math.Max(1, value)); }
@@ -23,9 +23,14 @@ namespace ProfitCalculators.Items
 
         public DefaultItem(string name = "", int tier = 1, float weight = 0f)
         {
-            this.name = name;
-            this.tier = tier;
-            this.weight = weight;
+            Name = name;
+            Tier = tier;
+            Weight = weight;
+        }
+
+        public KeyValuePair<DefaultItem, int>[] GetCraft(int craftIndex)
+        {
+            return CraftRecipes[craftIndex].GetCraft();
         }
     }
 }

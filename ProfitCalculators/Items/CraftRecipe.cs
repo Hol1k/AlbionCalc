@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProfitCalculators.Items
 {
-    internal class CraftInstruction
+    internal class CraftRecipe
     {
         private DefaultItem[] craftMatireals { get; set; }
         private int[] craftMatirealCounts { get; set; }
         public int size { get; private set; }
 
-        public CraftInstruction()
+        public CraftRecipe()
         {
             craftMatireals = new DefaultItem[0];
             craftMatirealCounts = new int[0];
             size = new();
         }
 
-        public CraftInstruction(params KeyValuePair<DefaultItem, int>[] matireals)
+        public CraftRecipe(params KeyValuePair<DefaultItem, int>[] matireals)
         {
             size = matireals.Length;
             craftMatireals = new DefaultItem[size];

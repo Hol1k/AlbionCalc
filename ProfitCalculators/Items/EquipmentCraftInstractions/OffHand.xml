@@ -2,232 +2,345 @@
 <OffHand>
 	<!--Tomes-->
 	<TomeOfSpells>
-		<Craft>
-			<Cloth>4</Cloth>
-			<Leather>4</Leather>
-		</Craft>
+		<Crafts>
+			<C1>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+			</C1>
+		</Crafts>
 		<Wight>
-			<T2>0.8</T2>
-			<T3>1.1</T3>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T2>0,8</T2>
+			<T3>1,1</T3>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</TomeOfSpells>
 
 	<EyeOfSecrets>
-		<Craft>
-			<Artifact alternative="CrystallizedSpirit">AlluringCristal</Artifact>
-			<Cloth>4</Cloth>
-			<Leather>4</Leather>
-		</Craft>
+		<Crafts>
+			<C1>
+				<AlluringCristal itemType="Artifact">1</AlluringCristal>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+			</C1>
+			<C2>
+				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</EyeOfSecrets>
 
 	<Muisak>
-		<Craft>
-			<Artifact alternative="CrystallizedDread">DemonicJawbone</Artifact>
-			<Cloth>4</Cloth>
-			<Leather>4</Leather>
-		</Craft>
+		<Crafts>
+			<C1>
+				<DemonicJawbone itemType="Artifact">1</DemonicJawbone>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C1>
+			<C2>
+				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Muisak>
 
 	<Taproot>
-		<Craft>
-			<Artifact alternative="CrystallizedMagic">InscribedStone</Artifact>
-			<Cloth>4</Cloth>
-			<Leather>4</Leather>
-		</Craft>
+		<Crafts>
+			<C1>
+				<InscribedStone itemType="Artifact">1</InscribedStone>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C1>
+			<C2>
+				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Taproot>
 
 	<CelestialCenser>
-		<Craft>
-			<Artifact alternative="CrystallizedDivinity">CelestialKeepsake</Artifact>
-			<Cloth>4</Cloth>
-			<Leather>4</Leather>
-		</Craft>
+		<Crafts>
+			<C1>
+				<CelestialKeepsake itemType="Artifact">1</CelestialKeepsake>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C1>
+			<C2>
+				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
+				<Cloth itemType="Resource">4</Cloth>
+				<Leather itemType="Resource">4</Leather>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</CelestialCenser>
 
 	<!--Torches-->
 	<Torch>
-		<Craft>
-			<Plank>4</Plank>
-			<Cloth>4</Cloth>
-		</Craft>
+		<Crafts>
+			<C1>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+			</C1>
+		</Crafts>
 		<Wight>
-			<T2>0.8</T2>
-			<T3>1.1</T3>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T2>0,8</T2>
+			<T3>1,1</T3>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Torch>
 
 	<Mistcaller>
-		<Craft>
-			<Artifact alternative="CrystallizedSpirit">RunedHorn</Artifact>
-			<Plank>4</Plank>
-			<Cloth>4</Cloth>
-		</Craft>
+		<Crafts>
+			<C1>
+				<RunedHorn itemType="Artifact">1</RunedHorn>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C1>
+			<C2>
+				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Mistcaller>
 
 	<LeeringCane>
-		<Craft>
-			<Artifact alternative="CrystallizedDread">HellishHandle</Artifact>
-			<Plank>4</Plank>
-			<Cloth>4</Cloth>
-		</Craft>
+		<Crafts>
+			<C1>
+				<HellishHandle itemType="Artifact">1</HellishHandle>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C1>
+			<C2>
+				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</LeeringCane>
 
 	<Cryptcandle>
-		<Craft>
-			<Artifact alternative="CrystallizedMagic">GhastlyCandle</Artifact>
-			<Plank>4</Plank>
-			<Cloth>4</Cloth>
-		</Craft>
+		<Crafts>
+			<C1>
+				<GhastlyCandle itemType="Artifact">1</GhastlyCandle>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C1>
+			<C2>
+				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Cryptcandle>
 
 	<SacredSepter>
-		<Craft>
-			<Artifact alternative="CrystallizedDivinity">ShatteredAvalonianMemento</Artifact>
-			<Plank>4</Plank>
-			<Cloth>4</Cloth>
-		</Craft>
+		<Crafts>
+			<C1>
+				<ShatteredAvalonianMemento itemType="Artifact">1</ShatteredAvalonianMemento>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C1>
+			<C2>
+				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
+				<Plank itemType="Resource">4</Plank>
+				<Cloth itemType="Resource">4</Cloth>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</SacredSepter>
 
 	<!--Shields-->
 	<Shield>
-		<Craft>
-			<Plank>4</Plank>
-			<Metal>4</Metal>
-		</Craft>
+		<Crafts>
+			<C1>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+			</C1>
+		</Crafts>
 		<Wight>
-			<T2>0.8</T2>
-			<T3>1.1</T3>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T2>0,8</T2>
+			<T3>1,1</T3>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Shield>
 
 	<Sarcophagus>
-		<Craft>
-			<Artifact alternative="CrystallizedSpirit">AncientShieldCore</Artifact>
-			<Plank>4</Plank>
-			<Metal>4</Metal>
-		</Craft>
+		<Crafts>
+			<C1>
+				<AncientShieldCore itemType="Artifact">1</AncientShieldCore>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C1>
+			<C2>
+				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Sarcophagus>
 
 	<CaitiffShield>
-		<Craft>
-			<Artifact alternative="CrystallizedDread">InfernalShieldCore</Artifact>
-			<Plank>4</Plank>
-			<Metal>4</Metal>
-		</Craft>
+		<Crafts>
+			<C1>
+				<InfernalShieldCore itemType="Artifact">1</InfernalShieldCore>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C1>
+			<C2>
+				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</CaitiffShield>
 
 	<Facebreaker>
-		<Craft>
-			<Artifact alternative="CrystallizedMagic">BloodforgedSpikes</Artifact>
-			<Plank>4</Plank>
-			<Metal>4</Metal>
-		</Craft>
+		<Crafts>
+			<C1>
+				<BloodforgedSpikes itemType="Artifact">1</BloodforgedSpikes>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C1>
+			<C2>
+				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</Facebreaker>
 
 	<AstralAegis>
-		<Craft>
-			<Artifact alternative="CrystallizedDivinity">CrushedAvalonianHeirloom</Artifact>
-			<Plank>4</Plank>
-			<Metal>4</Metal>
-		</Craft>
+		<Crafts>
+			<C1>
+				<CrushedAvalonianHeirloom itemType="Artifact">1</CrushedAvalonianHeirloom>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C1>
+			<C2>
+				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
+				<Plank itemType="Resource">4</Plank>
+				<Metal itemType="Resource">4</Metal>
+
+			</C2>
+		</Crafts>
 		<Wight>
-			<T4>1.7</T4>
-			<T5>2.5</T5>
-			<T6>3.8</T6>
-			<T7>5.7</T7>
-			<T8>8.5</T8>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
 		</Wight>
 	</AstralAegis>
 </OffHand>

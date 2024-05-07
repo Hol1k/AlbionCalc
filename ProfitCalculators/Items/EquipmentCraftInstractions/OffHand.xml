@@ -30,7 +30,6 @@
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -48,13 +47,11 @@
 				<DemonicJawbone itemType="Artifact">1</DemonicJawbone>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -72,13 +69,11 @@
 				<InscribedStone itemType="Artifact">1</InscribedStone>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -96,13 +91,11 @@
 				<CelestialKeepsake itemType="Artifact">1</CelestialKeepsake>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
 				<Cloth itemType="Resource">4</Cloth>
 				<Leather itemType="Resource">4</Leather>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -139,13 +132,11 @@
 				<RunedHorn itemType="Artifact">1</RunedHorn>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C1>
 			<C2>
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -163,13 +154,11 @@
 				<HellishHandle itemType="Artifact">1</HellishHandle>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -187,13 +176,11 @@
 				<GhastlyCandle itemType="Artifact">1</GhastlyCandle>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -211,13 +198,11 @@
 				<ShatteredAvalonianMemento itemType="Artifact">1</ShatteredAvalonianMemento>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
 				<Plank itemType="Resource">4</Plank>
 				<Cloth itemType="Resource">4</Cloth>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -254,13 +239,11 @@
 				<AncientShieldCore itemType="Artifact">1</AncientShieldCore>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C1>
 			<C2>
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -278,13 +261,11 @@
 				<InfernalShieldCore itemType="Artifact">1</InfernalShieldCore>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -302,13 +283,11 @@
 				<BloodforgedSpikes itemType="Artifact">1</BloodforgedSpikes>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C2>
 		</Crafts>
 		<Wight>
@@ -326,13 +305,11 @@
 				<CrushedAvalonianHeirloom itemType="Artifact">1</CrushedAvalonianHeirloom>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
 				<Plank itemType="Resource">4</Plank>
 				<Metal itemType="Resource">4</Metal>
-
 			</C2>
 		</Crafts>
 		<Wight>

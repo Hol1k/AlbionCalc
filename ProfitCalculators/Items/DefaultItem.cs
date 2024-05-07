@@ -28,7 +28,7 @@ namespace ProfitCalculators.Items
             Weight = weight;
         }
 
-        public KeyValuePair<DefaultItem, int>[] GetCraft(int craftIndex)
+        public KeyValuePair<DefaultItem, int>[] GetCraft(int craftIndex = 0)
         {
             return CraftRecipes[craftIndex].GetCraft();
         }

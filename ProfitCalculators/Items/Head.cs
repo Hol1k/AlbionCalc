@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml;
 
 namespace ProfitCalculators.Items
 {
-    internal class OffHand : Equipment
+    internal class Head : Equipment
     {
-        public OffHand(string name, int tier = 1, int enchantment = 0)
+        public Head(string name, int tier = 1, int enchantment = 0)
             : base(name, tier, enchantment)
         { SetCraft(name); }
     }

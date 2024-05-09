@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <OffHand>
-	<!--Cloth Cowls-->
-	<ScholarCowl>
+	<!--Cloth Robes-->
+	<ScholarRobe>
 		<Crafts>
 			<C1>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -16,12 +16,12 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</ScholarCowl>
+	</ScholarRobe>
 
-	<ClericCowl>
+	<ClericRobe>
 		<Crafts>
 			<C1>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -33,12 +33,12 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</ClericCowl>
+	</ClericRobe>
 
-	<MageCowl>
+	<MageRobe>
 		<Crafts>
 			<C1>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -50,25 +50,25 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</MageCowl>
+	</MageRobe>
 
-	<RoyalCowl>
+	<RoyalRobe>
 		<Crafts>
 			<RoyalSigil>
-				<T4>2</T4>
-				<T5>4</T5>
-				<T6>8</T6>
-				<T7>8</T7>
-				<T8>8</T8>
+				<T4>4</T4>
+				<T5>8</T5>
+				<T6>16</T6>
+				<T7>16</T7>
+				<T8>16</T8>
 			</RoyalSigil>
 			<C1>
-				<ScholarCowl itemType="Head">1</ScholarCowl>
+				<ScholarRobe itemType="Chest">1</ScholarRobe>
 			</C1>
 			<C2>
-				<ClericCowl itemType="Head">1</ClericCowl>
+				<ClericRobe itemType="Chest">1</ClericRobe>
 			</C2>
 			<C3>
-				<MageCowl itemType="Head">1</MageCowl>
+				<MageRobe itemType="Chest">1</MageRobe>
 			</C3>
 		</Crafts>
 		<Wight>
@@ -78,17 +78,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</RoyalCowl>
+	</RoyalRobe>
 
-	<DruidCowl>
+	<DruidRobe>
 		<Crafts>
 			<C1>
-				<DruidicPreservedBeak itemType="Artifact">1</DruidicPreservedBeak>
-				<Cloth itemType="Resource">8</Cloth>
+				<DruidicFeathers itemType="Artifact">1</DruidicFeathers>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 			<C2>
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -98,17 +98,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</DruidCowl>
+	</DruidRobe>
 
-	<FiendCowl>
+	<FiendRobe>
 		<Crafts>
 			<C1>
-				<InfenalClothVisor itemType="Artifact">1</InfenalClothVisor>
-				<Cloth itemType="Resource">8</Cloth>
+				<InfenalClothFolds itemType="Artifact">1</InfenalClothFolds>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -118,17 +118,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</FiendCowl>
+	</FiendRobe>
 
-	<CultistCowl>
+	<CultistRobe>
 		<Crafts>
 			<C1>
-				<AlluringPadding itemType="Artifact">1</AlluringPadding>
-				<Cloth itemType="Resource">8</Cloth>
+				<AlluringAmulet itemType="Artifact">1</AlluringAmulet>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -138,17 +138,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</CultistCowl>
+	</CultistRobe>
 
-	<CowlOfPurity>
+	<RobeOfPurity>
 		<Crafts>
 			<C1>
-				<SanctifiedMask itemType="Artifact">1</SanctifiedMask>
-				<Cloth itemType="Resource">8</Cloth>
+				<SanctifiedBelt itemType="Artifact">1</SanctifiedBelt>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
-				<Cloth itemType="Resource">8</Cloth>
+				<Cloth itemType="Resource">16</Cloth>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -158,13 +158,13 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</CowlOfPurity>
+	</RobeOfPurity>
 
-	<FeyscaleHat>
+	<FeyscaleRobe>
 		<Crafts>
 			<C1>
-				<IntactFeyFibula itemType="Artifact">1</IntactFeyFibula>
-				<Cloth itemType="Resource">8</Cloth>
+				<FeyDorsalRing itemType="Artifact">1</FeyDorsalRing>
+				<Cloth itemType="Resource">16</Cloth>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -174,30 +174,13 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</FeyscaleHat>
+	</FeyscaleRobe>
 
-	<!--Lether Hoods-->
-	<MercenaryHood>
+	<!--Lether Jackets-->
+	<MercenaryJacket>
 		<Crafts>
 			<C1>
-				<Lether itemType="Resource">8</Lether>
-			</C1>
-		</Crafts>
-		<Wight>
-			<T2>0,8</T2>
-			<T3>1,1</T3>
-			<T4>1,7</T4>
-			<T5>2,5</T5>
-			<T6>3,8</T6>
-			<T7>5,7</T7>
-			<T8>8,5</T8>
-		</Wight>
-	</MercenaryHood>
-
-	<HunterHood>
-		<Crafts>
-			<C1>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -209,12 +192,12 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</HunterHood>
+	</MercenaryJacket>
 
-	<AssassinHood>
+	<HunterJacket>
 		<Crafts>
 			<C1>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -226,25 +209,42 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</AssassinHood>
+	</HunterJacket>
 
-	<RoyalHood>
+	<AssassinJacket>
+		<Crafts>
+			<C1>
+				<Lether itemType="Resource">16</Lether>
+			</C1>
+		</Crafts>
+		<Wight>
+			<T2>0,8</T2>
+			<T3>1,1</T3>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
+		</Wight>
+	</AssassinJacket>
+
+	<RoyalJacket>
 		<Crafts>
 			<RoyalSigil>
-				<T4>2</T4>
-				<T5>4</T5>
-				<T6>8</T6>
-				<T7>8</T7>
-				<T8>8</T8>
+				<T4>4</T4>
+				<T5>8</T5>
+				<T6>16</T6>
+				<T7>16</T7>
+				<T8>16</T8>
 			</RoyalSigil>
 			<C1>
-				<MercenaryHood itemType="Head">1</MercenaryHood>
+				<MercenaryJacket itemType="Chest">1</MercenaryJacket>
 			</C1>
 			<C2>
-				<HunterHood itemType="Head">1</HunterHood>
+				<HunterJacket itemType="Chest">1</HunterJacket>
 			</C2>
 			<C3>
-				<AssassinHood itemType="Head">1</AssassinHood>
+				<AssassinJacket itemType="Chest">1</AssassinJacket>
 			</C3>
 		</Crafts>
 		<Wight>
@@ -254,17 +254,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</RoyalHood>
+	</RoyalJacket>
 
-	<StalkerHood>
+	<StalkerJacket>
 		<Crafts>
 			<C1>
-				<ImbuedVisor itemType="Artifact">1</ImbuedVisor>
-				<Lether itemType="Resource">8</Lether>
+				<ImbuedLeatherFolds itemType="Artifact">1</ImbuedLeatherFolds>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 			<C2>
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -274,17 +274,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</StalkerHood>
+	</StalkerJacket>
 
-	<HellionHood>
+	<HellionJacket>
 		<Crafts>
 			<C1>
-				<DemonhidePadding itemType="Artifact">1</DemonhidePadding>
-				<Lether itemType="Resource">8</Lether>
+				<DemonhideLeather itemType="Artifact">1</DemonhideLeather>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -294,17 +294,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</HellionHood>
+	</HellionJacket>
 
-	<SpecterHood>
+	<SpecterJacket>
 		<Crafts>
 			<C1>
-				<GhastlyVisor itemType="Artifact">1</GhastlyVisor>
-				<Lether itemType="Resource">8</Lether>
+				<GhastlyLeather itemType="Artifact">1</GhastlyLeather>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -314,17 +314,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</SpecterHood>
+	</SpecterJacket>
 
-	<HoodOfTenacity>
+	<JacketOfTenacity>
 		<Crafts>
 			<C1>
-				<AuguredPadding itemType="Artifact">1</AuguredPadding>
-				<Lether itemType="Resource">8</Lether>
+				<AuguredSash itemType="Artifact">1</AuguredSash>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
-				<Lether itemType="Resource">8</Lether>
+				<Lether itemType="Resource">16</Lether>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -334,13 +334,13 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</HoodOfTenacity>
+	</JacketOfTenacity>
 
-	<MistwalkerHood>
+	<MistwalkerJacket>
 		<Crafts>
 			<C1>
-				<FlawlessGriffinBeak itemType="Artifact">1</FlawlessGriffinBeak>
-				<Lether itemType="Resource">8</Lether>
+				<UntarnishedGriffinFeathers itemType="Artifact">1</UntarnishedGriffinFeathers>
+				<Lether itemType="Resource">16</Lether>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -350,30 +350,13 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</MistwalkerHood>
+	</MistwalkerJacket>
 
-	<!--Plate Helmets-->
-	<SoldierHelmet>
+	<!--Plate Armors-->
+	<SoldierArmor>
 		<Crafts>
 			<C1>
-				<Metal itemType="Resource">8</Metal>
-			</C1>
-		</Crafts>
-		<Wight>
-			<T2>0,8</T2>
-			<T3>1,1</T3>
-			<T4>1,7</T4>
-			<T5>2,5</T5>
-			<T6>3,8</T6>
-			<T7>5,7</T7>
-			<T8>8,5</T8>
-		</Wight>
-	</SoldierHelmet>
-
-	<KnightHelmet>
-		<Crafts>
-			<C1>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -385,12 +368,12 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</KnightHelmet>
+	</SoldierArmor>
 
-	<GuardianHelmet>
+	<KnightArmor>
 		<Crafts>
 			<C1>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -402,25 +385,42 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</GuardianHelmet>
+	</KnightArmor>
 
-	<RoyalHelmet>
+	<GuardianArmor>
+		<Crafts>
+			<C1>
+				<Metal itemType="Resource">16</Metal>
+			</C1>
+		</Crafts>
+		<Wight>
+			<T2>0,8</T2>
+			<T3>1,1</T3>
+			<T4>1,7</T4>
+			<T5>2,5</T5>
+			<T6>3,8</T6>
+			<T7>5,7</T7>
+			<T8>8,5</T8>
+		</Wight>
+	</GuardianArmor>
+
+	<RoyalArmor>
 		<Crafts>
 			<RoyalSigil>
-				<T4>2</T4>
-				<T5>4</T5>
-				<T6>8</T6>
-				<T7>8</T7>
-				<T8>8</T8>
+				<T4>4</T4>
+				<T5>8</T5>
+				<T6>16</T6>
+				<T7>16</T7>
+				<T8>16</T8>
 			</RoyalSigil>
 			<C1>
-				<SoldierHelmet itemType="Head">1</SoldierHelmet>
+				<SoldierArmor itemType="Chest">1</SoldierArmor>
 			</C1>
 			<C2>
-				<KnightHelmet itemType="Head">1</KnightHelmet>
+				<KnightArmor itemType="Chest">1</KnightArmor>
 			</C2>
 			<C3>
-				<GuardianHelmet itemType="Head">1</GuardianHelmet>
+				<GuardianArmor itemType="Chest">1</GuardianArmor>
 			</C3>
 		</Crafts>
 		<Wight>
@@ -430,17 +430,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</RoyalHelmet>
+	</RoyalArmor>
 
-	<GraveguardHelmet>
+	<GraveguardArmor>
 		<Crafts>
 			<C1>
-				<AncientPadding itemType="Artifact">1</AncientPadding>
-				<Metal itemType="Resource">8</Metal>
+				<AncientChainRings itemType="Artifact">1</AncientChainRings>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 			<C2>
 				<CrystallizedSpirit itemType="Artifact">1</CrystallizedSpirit>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -450,17 +450,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</GraveguardHelmet>
+	</GraveguardArmor>
 
-	<DemonHelmet>
+	<DemonArmor>
 		<Crafts>
 			<C1>
-				<DemonicScraps itemType="Artifact">1</DemonicScraps>
-				<Metal itemType="Resource">8</Metal>
+				<DemonicPlates itemType="Artifact">1</DemonicPlates>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 			<C2>
 				<CrystallizedDread itemType="Artifact">1</CrystallizedDread>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -470,17 +470,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</DemonHelmet>
+	</DemonArmor>
 
-	<JudicatorHelmet>
+	<JudicatorArmor>
 		<Crafts>
 			<C1>
-				<CarvedSkullPadding itemType="Artifact">1</CarvedSkullPadding>
-				<Metal itemType="Resource">8</Metal>
+				<PreservedAnimalFur itemType="Artifact">1</PreservedAnimalFur>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 			<C2>
 				<CrystallizedMagic itemType="Artifact">1</CrystallizedMagic>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -490,17 +490,17 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</JudicatorHelmet>
+	</JudicatorArmor>
 
-	<HelmetOfValor>
+	<ArmorOfValor>
 		<Crafts>
 			<C1>
-				<ExaltedVisor itemType="Artifact">1</ExaltedVisor>
-				<Metal itemType="Resource">8</Metal>
+				<ExaltedPlating itemType="Artifact">1</ExaltedPlating>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 			<C2>
 				<CrystallizedDivinity itemType="Artifact">1</CrystallizedDivinity>
-				<Metal itemType="Resource">8</Metal>
+				<Metal itemType="Resource">16</Metal>
 			</C2>
 		</Crafts>
 		<Wight>
@@ -510,13 +510,13 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</HelmetOfValor>
+	</ArmorOfValor>
 
-	<DuskweaverHelmet>
+	<DuskweaverArmor>
 		<Crafts>
 			<C1>
-				<VailweaverMandibles itemType="Artifact">1</VailweaverMandibles>
-				<Metal itemType="Resource">8</Metal>
+				<VailweaverCarapace itemType="Artifact">1</VailweaverCarapace>
+				<Metal itemType="Resource">16</Metal>
 			</C1>
 		</Crafts>
 		<Wight>
@@ -526,5 +526,5 @@
 			<T7>5,7</T7>
 			<T8>8,5</T8>
 		</Wight>
-	</DuskweaverHelmet>
+	</DuskweaverArmor>
 </OffHand>

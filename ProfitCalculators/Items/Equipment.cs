@@ -79,6 +79,8 @@ namespace ProfitCalculators.Items
             if (itemType == "Artifact") return new Artifact(item.Name, tier);
             if (itemType == "Resource") return new Resource(item.Name, tier, enchantment);
             if (itemType == "Head") return new Head(item.Name, tier, enchantment);
+            if (itemType == "Chest") return new Chest(item.Name, tier, enchantment);
+            if (itemType == "Shoes") return new Shoes(item.Name, tier, enchantment);
             return new DefaultItem (itemType, tier);
         }
     }

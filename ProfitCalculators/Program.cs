@@ -1,6 +1,6 @@
 ﻿using ProfitCalculators.Items;
 
-DefaultItem Head = new Head("RoyalCowl", 4);
+DefaultItem Head = new Head("RoyalCowl", 5);
 
 foreach (CraftRecipe craft in Head.CraftRecipes)
 {
